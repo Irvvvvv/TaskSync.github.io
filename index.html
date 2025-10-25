@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskSync</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <section class="todo">
+    <h2>TaskSync - Lets Get Things Done 😁</h2>
+
+    <div class="input">
+      <input id="todoInput" type="text" placeholder="Add a new task…" autocomplete="off" aria-label="New task">
+      <button class="btn" id="addButton">Add</button>
+    </div>
+
+    <div class="toolbar">
+      <span class="count">Tasks: <strong id="todoCount">0</strong></span>
+      <div class="tools">
+        <button id="deleteButton" class="danger">Clear all</button>
+        <button id="clearCompleted" class="muted">Clear completed</button>
+      </div>
+    </div>
+
+    <div id="todoList" class="scroll" aria-live="polite"></div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>Created by Irving Garcia-Gomez</p>
+    </div>
+  </footer>
+</body>
+</html>
